@@ -7,7 +7,6 @@
 //But looping is discouraged in functional programming, 
 //so I should see to do it using recursion.
 
-
 function fibonacci(number){
     if(number == 0 | number ==1){
         return parseInt(number);
@@ -16,6 +15,9 @@ function fibonacci(number){
         return fibonacci(number -1) + fibonacci(number-2);
     }
 }
+
+//Question^ Could've I used the function 'switch' 
+//with cases and default?
 
 const readline = require('readline').createInterface({
     input: process.stdin,
