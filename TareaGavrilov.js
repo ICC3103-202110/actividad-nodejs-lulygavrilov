@@ -24,7 +24,7 @@ const readline = require('readline').createInterface({
     output: process.stdout
   });
 
-  readline.question('Please enter a number:', number => {
+  readline.question('[Enter position for Nº in Fibonacci]:', number => {
     console.log(fibonacci(number));
     readline.close();
   });
