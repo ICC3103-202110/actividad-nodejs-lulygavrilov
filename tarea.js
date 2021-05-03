@@ -5,10 +5,7 @@
 
 //But looping is discouraged in functional programming, 
 //so I should see to do it using recursion.
-function main(){
-    var number = parseInt(readLine(),10);
-    fibonacci(number);
-}
+
 
 function fibonacci(number){
     var first = 0;
@@ -22,3 +19,13 @@ function fibonacci(number){
     fibonacciNumber = second
     return fibonacciNumber
 }
+
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+
+  readline.question('Please enter a number:', number => {
+    console.log(fibonacci(number));
+    readline.close();
+  });
