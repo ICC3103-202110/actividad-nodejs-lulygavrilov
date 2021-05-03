@@ -8,16 +8,16 @@
 
 
 function fibonacci(number){
-    var first = 0;
-    var second = 1;
-    var newNumber = 0;
-    for(i=0;i<=number;i++){
-        newNumber = first + second;
-        first = second;
-        second = newNumber;
+    switch(number){
+        case 0:
+            return number;
+            break
+        case 1:
+            return number;
+            break
+        default:
+            return fibonacci(number -1) + fibonacci(number-2);
     }
-    fibonacciNumber = second
-    return fibonacciNumber
 }
 
 const readline = require('readline').createInterface({
